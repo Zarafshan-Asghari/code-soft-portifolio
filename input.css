@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen(lg) {
+  .hero-bg {
+    width: 1800px;
+    height: 220px;
+    left: 30%;
+    top: 10%;
+    @apply absolute  rounded-l-full  bg-colors-softBlue  -z-10;
+  }
+}
+/* @media screen(md) {
+  .hero-bg {
+    width: 500px;
+    height: 150px;
+    left: -2%;
+    top: 0%;
+    @apply absolute  rounded-l-full  bg-colors-softBlue  -z-10;
+  } */
+/* } */

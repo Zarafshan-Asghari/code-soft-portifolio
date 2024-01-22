@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <title>my portifolio</title>
+  </head>
+  <body class="">
+    <!-- header for mobile image and bg-->
+
+    <header class="mb-16">
+      <div class="md:hidden relative">
+        <div
+          class=" flex w-full flex-col h-16 md:h-40  bg-transparent blur-[2px]"
+        >
+          <div class="bg-colors-softBlue h-full  w-full bg-fixed"></div>
+         
+        </div>
+        <!-- image absolute icons absolute -->
+        <img
+          src="./img/z.jpg"
+          alt="my photo"
+          class="absolute z-10 left-6 top-6 w-20 h-20 md:w-40 md:h-40 rounded-full shadow-lg"
+        />
+
+        <ion-icon
+          name="logo-html5"
+          class="w-4 h-4 absolute top-10 right-16 text-red-700 bg-opacity-90"
+        ></ion-icon>
+
+        <ion-icon
+          name="logo-javascript"
+          class="w-4 h-4 absolute top-5 right-44 bg-opacity-70 text-yellow-600"
+        ></ion-icon>
+
+        <ion-icon
+          name="logo-css3"
+          class="w-4 h-4 absolute top-10 right-52 text-blue-800 bg-opacity-70"
+        ></ion-icon>
+
+        <img
+          src="./img/tailwind.png"
+          class="w-10 h-4 absolute top-7  right-24 bg-opacity-70"
+          alt=""
+        />
+      </div>
+
+      <!-- navbar for larg screen -->
+      <nav class="hidden lg:block bg-colors-softBlue py-8 mb-20 text-white">
+        <div class="flex items-center justify-center gap-6 font-bold">
+          <a href="#about" class="uppercase hover:text-yellow-300">about me</a>
+          <a href="#about" class="uppercase hover:text-yellow-300">projects</a>
+          <a href="#about" class="uppercase hover:text-yellow-300">contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class=" container max-w-5xl mx-auto ">
+      <div class="flex items-center md:gap-6 ">
+        <!-- contents -->
+        <div class="flex flex-col px-6 py-0">
+          <h3 class="uppercase text-xl md:text-2xl font-semibold mb-4 tracking-wide hover:text-colors-softBlue">
+            about me
+          </h3>
+          <p class="text-gray-700 font-sans text-base">
+           Greethings!</span> I'm Zarafshan Asghari,I'm in
+            my second year at Herat University . My passion lies in Web
+            development , and I've honed my skills in HTML,CSS,Tailwind CSS ,
+            and javascript . While I may be new to the programming world , I am
+            eager to learn and contribute . Let's build something amazing
+            together !.
+          </p>
+        </div>
+        <!-- image only in md and big screens -->
+        <div class="relative mx-auto lg:mx-0 m-4 hidden md:block">
+          <!-- absolute background -->
+
+          <div class="hero-bg bg-transparent blur-sm"></div>
+
+          <img
+            src="img/me.png"
+            alt="img"
+            class="outline z-10 outline-white p-2 rounded-full"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- skills -->
+    <section>
+      <div class="p-6 max-w-5xl mx-auto flex flex-col gap-6 md:flex-row">
+        <!-- contents -->
+        <div class="flex flex-col space-y-4">
+          <h5 class="text-lg font-semibold uppercase hover:text-colors-softBlue">education and skill</h5>
+          <p class="capitalize font-thin text-sm">as i mentioned before i am I'm in
+            my second year at Herat University, during the this time here is my skill:
+          </p>
+          <p class="text-colors-softBlue uppercase">languages</p>
+          <ul class="flex flex-col space-y-2 mb-4">
+            
+            <li class="text-xs mr-2">JavaScript  <ion-icon
+              name="logo-javascript"
+              class="w-4 h-4  bg-opacity-70 text-yellow-600"
+            ></ion-icon> </li>
+            <li class="text-xs mr-2">CSS <ion-icon
+              name="logo-css3"
+              class="w-4 h-4  text-blue-800 bg-opacity-70"
+            ></ion-icon> </li>
+            <li class="text-xs mr-2">HTML  <ion-icon
+              name="logo-html5"
+              class="w-4 h-4  text-red-700 bg-opacity-90"
+            ></ion-icon></li>
+          </ul>
+          <p class="text-colors-softBlue uppercase ">frameworks</p>
+          <ul class="flex space-x-2">
+          
+            <li class="text-xs">Tailwind CSS</li>
+            <img
+          src="./img/tailwind.png"
+          class="w-10 h-4  bg-opacity-70"
+          alt=""
+        />
+          </ul>
+        </div>
+        <!-- img -->
+      </div>
+    </section>
+
+    <!-- project section-->
+    <section class="container mx-auto max-w-5xl overflow-x-hidden ">
+      <p class="text-xl md:text-2xl font-semibold mb-8 ml-2 uppercase hover:text-colors-softBlue">my project</p>
+      <div class="flex flex-col md:flex-row space-y-6 lg:space-y-0 lg:space-x-8">
+         <!-- project 1 -->
+        <div
+          class="p-2 mx-2 relative group flex flex-col items-center justify-center  bg-colors-veryDarkBlue rounded-lg w-[340px] md:w-[400px]"
+        >
+          <img
+            src="./img/projectimg/landingpage.PNG"
+            alt=""
+            class="object-cover bg-transparent blur-sm group-hover:blur-0 transition-all duration-300"
+          />
+          <div
+            class="absolute -bottom-4 -right-2 bg-colors-veryDarkBlue p-2  md:p-4 text-white border-b-2 border-r-2 border-colors-veryDarkBlue hover:transform hover:scale-110 duration-500 flex space-x-4"
+          >
+            <a
+              href="https://zarafshan-asghari.github.io/CODE-SOFT/"
+              class="uppercase tracking-wide text-xs "
+              >landing page
+            </a>
+            <ion-icon name="link" class="rotate-45 w-4 h-4"></ion-icon>
+          </div>
+        </div>
+           <!-- project 2 -->
+           <div
+           class="p-2 mx-2 relative group flex flex-col items-center justify-center  bg-colors-veryDarkBlue rounded-lg w-[340px] md:w-[400px]"
+         >
+          <img
+            src="./img/projectimg/bg-ch.jpg"
+            alt=""
+            class="object-cover bg-transparent blur-sm group-hover:blur-0 transition-all duration-300"
+          />
+          <div
+            class="absolute -bottom-4 -right-2 bg-colors-veryDarkBlue p-2  md:p-4 text-white border-b-2 border-r-2 border-colors-veryDarkBlue hover:transform hover:scale-110 duration-500 flex space-x-4"
+          >
+        
+            <a
+              href="https://zarafshan-asghari.github.io/background-changer/"
+              class="uppercase  text-xs tracking-wide "
+              >background ch
+            </a>
+            <ion-icon name="link" class="rotate-45 w-4 h-4"></ion-icon>
+          </div>
+        </div>
+
+
+
+        <!-- project 3 -->
+        <div
+          class="p-2 mx-2 relative group flex flex-col items-center justify-center  bg-colors-veryDarkBlue rounded-lg w-[340px] md:w-[400px]"
+        >
+          <img
+            src="./img/projectimg/reveiw.jpg"
+            alt=""
+            class="object-cover bg-transparent blur-sm group-hover:blur-0 transition-all duration-300"
+          />
+          <div
+            class="absolute -bottom-4 -right-2 bg-colors-veryDarkBlue p-2  md:p-4 text-white border-b-2 border-r-2 border-colors-veryDarkBlue hover:transform hover:scale-110 duration-500 flex space-x-4"
+          >
+            
+            <a
+              href="https://zarafshan-asghari.github.io/My-Review/"
+              class="uppercase tracking-wide text-xs"
+              >reviews
+            </a>
+            <ion-icon name="link" class="rotate-45 w-4 h-4"></ion-icon>
+          </div>
+        </div>
+
+        <!-- pro 4 -->
+        <div
+        class="p-2 mx-2 relative group flex flex-col items-center justify-center  bg-colors-veryDarkBlue rounded-lg w-[340px] md:w-[400px]"
+      >
+          <img
+            src="./img/projectimg/todo.PNG"
+            alt=""
+            class="object-cover bg-transparent blur-sm group-hover:blur-0 transition-all duration-300"
+          />
+          <div
+            class="absolute -bottom-4 -right-2 bg-colors-veryDarkBlue p-2  md:p-4 text-white border-b-2 border-r-2 border-colors-veryDarkBlue hover:transform hover:scale-110 duration-500 flex space-x-4"
+          >
+           
+            <a
+              href=" https://zarafshan-asghari.github.io/TODO-list/"
+              class="uppercase tracking-wide text-xs"
+              >TODO-list
+            </a>
+            <ion-icon name="link" class="rotate-45 w-4 h-4"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center mt-10">
+        <!-- TODO github repos -->
+        <a class="text-yellow-400" href="#"
+          >more <ion-icon name="arrow-forward"></ion-icon
+        ></a>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <div
+      class="max-w-5xl mx-auto px-5 py-10 md:px-10 md:py-20 flex items-center justify-center flex-col space-y-6"
+    >
+      <p class="text-xl md:text-2xl font-bold uppercase hover:text-colors-softBlue">contact</p>
+      <p class="text-lg md:text-xl text-center font-semibold text-colors-softBlue">
+        let's start working togather by saying Hello
+      </p>
+      <div class="flex gap-6">
+        <a href="https://www.linkedin.com/in/zarafshan-asghari-a31356283/">
+          <ion-icon class="md:w-8 md:h-8 w-6 h-6" name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://github.com/Zarafshan-Asghari">
+          <ion-icon class="md:w-8 md:h-8 w-6 h-6" name="logo-github"></ion-icon
+        ></a>
+
+        <a href="https://zarafshan.as2001@gmail.com"
+          ><ion-icon class="md:w-8 md:h-8 w-6 h-6" name="mail"></ion-icon
+        ></a>
+      </div>
+      <!-- links -->
+    </div>
+
+    <footer class="bg-colors-veryDarkBlue text-white py-8">
+      <div class="text-center text-xs">&copy; 2024 zarafshan.All Rights Reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
